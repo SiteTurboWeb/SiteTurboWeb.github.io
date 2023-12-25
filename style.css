@@ -275,7 +275,7 @@ html,body{
   max-height: 200px;
  position: relative;
  top: 200px; 
- left: 140px;
+ left: 160px;
 
 
  border-radius: 2px;
@@ -293,7 +293,7 @@ box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
 }
 .container-img{
 
- left: -60px;
+ left: -70px;
  position: relative;
 	 border-radius: 2px;
 	margin: 0 auto;
@@ -365,14 +365,25 @@ font-family: 'Vina Sans', sans-serif;
 	display: none;
 
 }
+.texto-legenda p{
+	padding-top: 10px;
+	padding-left: 5px;
+}
 .titulo-legenda{
+	text-align: center;
+	color: white;
 	margin: 0 auto;
 	width: 100%;
 	background-color: rgba(17, 16, 66, 1) ;
 	padding: 10px;
 	border-radius: 8px;
 }
+.titulo-legenda a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
 
+}
 
 .el-img-single{
 	width: 100%;
@@ -385,11 +396,12 @@ font-family: 'Vina Sans', sans-serif;
 
 	display: none;
 	padding-top: 100px;
+	border-radius: 130px;
 }
 
 .el-img-single img{
-	border-radius: 10px;
-	margin-top: 10px;
+	border-radius: 20px;
+	margin-top: 30px;
 	width: 100%;
 	height: 100%;
 		max-width: 230px;
@@ -459,7 +471,7 @@ animation: slide-in 1s;
 	
 }
 .card-single{
-	margin: 0 auto;
+	margin: 20px auto;
 	display: flex;
 	width: 100%;
 	padding: 20px;
