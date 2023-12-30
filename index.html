@@ -37,6 +37,18 @@
 		</div><!--bgl-->
 
 
+		
+	<div class="bgL" id="bgLim1">
+		<div class="bgconteudoL" >
+		
+			</div><!--bgconteudo-->
+		</div><!--bgl-->
+
+
+
+
+
+
 
 		<div class="menu">
 
@@ -56,20 +68,20 @@
 				<div class="item_menu_single">
 
 					<div class="backmenuselect" id="1"  style="	background-color: rgba(255,255,255,0.8);" >
-					<a style="color:#1d166e " id="b1"  href="#home" onclick="obterIdDaDiv(this)">Home</a>
+					<a class="scroll-link" style="color:#1d166e " id="b1"  href="#home" onclick="obterIdDaDiv(this)">Home</a>
 					</div>
 
 				</div>
 
 				<div class="item_menu_single">
 					<div class="backmenuselect" id="2">
-					<a id="b2"   href="#sites" onclick="obterIdDaDiv(this)">Sites</a>
+					<a class="scroll-link" id="b2"   href="#sites" onclick="obterIdDaDiv(this)">Sites</a>
 					</div>
 				</div>
 
 					<div class="item_menu_single">
 					<div class="backmenuselect" id="3">
-					<a id="b3"   href="#sobre" onclick="obterIdDaDiv(this)">Sobre</a>
+					<a id="b3" class="scroll-link"  href="#sobre" onclick="obterIdDaDiv(this)">Sobre</a>
 					</div>
 				</div>
 
@@ -77,7 +89,7 @@
 
 					<div class="item_menu_single">
 					<div class="backmenuselect" id="4">
-					<a id="b4"  href="#contato" onclick="obterIdDaDiv(this)">Contato</a>
+					<a id="b4" class="scroll-link" href="#contato" onclick="obterIdDaDiv(this)">Contato</a>
 					</div>
 				</div>
 
@@ -323,7 +335,7 @@
 
 		   
 			<div class="containerflexa">
-				<div class="flexa"></div>
+				<div class="flexa" onclick="descer()"></div>
 			</div>
 
 		  
@@ -336,21 +348,21 @@
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+							<img src="codigo2.png">
 							<h3>SEU SITE</h3>
 						</div>
 					</div>
 					<div class="face face2">
 						<div class="content">
 							<p>Já pensou em ganhar um site que custa 2000R$ de graça? A Turboweb criou um sistema inovador para aquisiçao de sites!</p>
-								<a href="#">Clique para ver os templates!</a>
+								<a href="#templates">Clique para ver os templates!</a>
 						</div>
 					</div>
 				</div>
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+							<img src="pessoa.png" style="position: relative; left: 50px;">
 							<h3>PATROCINADORES</h3>
 						</div>
 					</div>
@@ -364,14 +376,14 @@
 				<div class="card">
 					<div class="face face1">
 						<div class="content">
-							<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+							<img src="tag2.png" style="margin: 0 auto;">
 							<h3>PREÇOS</h3>
 						</div>
 					</div>
 					<div class="face face2">
 						<div class="content">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-								<a href="#">Clique para ver os nossos preços!</a>
+								<a href="#valores">Clique para ver os nossos preços!</a>
 						</div>
 					</div>
 				</div>
@@ -387,7 +399,7 @@
 
 	   
 
-
+	   <div id="templates" style="position: relative; top: -30px;"></div>
 
 	   <div class="containertemplates">
 			<div style="padding-top: 50px;" class="titulo-container2">
@@ -447,6 +459,15 @@
 	   </div><!--feedabck-->
 
 
+
+
+
+
+
+
+
+
+	   <div id="valores" style="position: relative; top: -30px;"></div>
 	   <div class="containerVALORES">
 		<div style="padding-top: 50px;" class="titulo-container2">
 			<p style="font-size: 35px; font-weight: bold;">VALORES</p>
@@ -492,6 +513,14 @@
 	</content>
 
 
+	<footer>
+		<div class="ftcontent">
+			<p>Todos os direitos reservados </p>
+			<p>@TurboWeb 2024</p>
+		</div>
+	</footer>
+
+
 	<!-- Inclua o jQuery a partir do CDN -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
@@ -516,6 +545,41 @@
 
 	obj0.vari = 0;
 	obj1.vari = 34;
+
+
+	function descer(){
+		window.scrollBy({
+			top: 200,
+			left: 0,
+			behavior: 'smooth'
+		});
+	}
+
+	
+
+
+
+
+
+	document.querySelectorAll('.scroll-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+
+
+
 
 
 
