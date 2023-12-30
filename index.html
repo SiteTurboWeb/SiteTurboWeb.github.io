@@ -5,10 +5,19 @@
 			<meta charset="utf-8">
 		<link href="style.css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
 </head>
 
 
+
+
 <body>
+
+	<!--http-server -c1-->
+
+
 
 	<header>
 
@@ -47,20 +56,20 @@
 				<div class="item_menu_single">
 
 					<div class="backmenuselect" id="1"  style="	background-color: rgba(255,255,255,0.8);" >
-					<a style="color:#1d166e " id="b1"  href="#Contato" onclick="obterIdDaDiv(this)">Home</a>
+					<a style="color:#1d166e " id="b1"  href="#home" onclick="obterIdDaDiv(this)">Home</a>
 					</div>
 
 				</div>
 
 				<div class="item_menu_single">
 					<div class="backmenuselect" id="2">
-					<a id="b2"   href="#Contato" onclick="obterIdDaDiv(this)">Sites</a>
+					<a id="b2"   href="#sites" onclick="obterIdDaDiv(this)">Sites</a>
 					</div>
 				</div>
 
 					<div class="item_menu_single">
 					<div class="backmenuselect" id="3">
-					<a id="b3"   href="#Contato" onclick="obterIdDaDiv(this)">Sobre</a>
+					<a id="b3"   href="#sobre" onclick="obterIdDaDiv(this)">Sobre</a>
 					</div>
 				</div>
 
@@ -68,7 +77,7 @@
 
 					<div class="item_menu_single">
 					<div class="backmenuselect" id="4">
-					<a id="b4"  href="#Contato" onclick="obterIdDaDiv(this)">Contato</a>
+					<a id="b4"  href="#contato" onclick="obterIdDaDiv(this)">Contato</a>
 					</div>
 				</div>
 
@@ -82,7 +91,7 @@
 
 	<content>
 		
-		<div class="container1">
+		<div class="container1" id="home">
 			 <div class="mask">
 			 	
 	
@@ -98,20 +107,25 @@
 
 
 			 			</div>
+
+			<div class="btndotitulo">
+				<p>Comece por aqui!</p>
+			</div>
+			 
 			
 			
 			 
 
 
 			 </div>
-		</div>
+		</div >
 
+		<div style="position: relative; top: -100px;" id="sites"></div>
 
-
-		<div class="container2">
+		<div class="container2" >
 
 			<div class="titulo-container2">
-				<p>NOSSOS    TRABALHOS</p>
+				<p >NOSSOS    TRABALHOS</p>
 			</div>
 
 			<div class="container-conteudos">
@@ -236,10 +250,10 @@
 				
 
 
-			</div>
+			</div><!--containerconteudos-->
 
 
-	<div class="Cardcontainer">
+	<!--<div class="Cardcontainer">
 			<div class="card-single">		
 
 					<div class="card">
@@ -269,14 +283,217 @@
 					</div>
 			</div>
 
+		</div>-->
+
+
+
+
+		</div><!--container2-->
+
+
+		<div id="sobre" style="position: relative; top: -100px;"></div>
+
+
+		<div class="containersobre" >
+			
+				
+				<div style="padding-top: 50px;" class="titulo-container2">
+					<p style="font-size: 35px; font-weight: bold;">SOBRE</p>
+				</div>
+					
+		   <div class="boxsobrecontainer">
+
+			<div class="boxsobre">
+				<h1>Como ganhar um site?</h1>
+				<div class="areadetexto">
+					<p>A missao da nossa empresa é facilitar o acesso a websites para todos os estabelecimentos. Voce pode ter um websit próprio para sua empresa por apenas <b> 20% </b> do valor que ele custaria. A unica coisa que voce precisa fazer é ceder um pequeno espaço para patrocinadores do seu site. Isso possibilita criar uma rede de potenciais clientes </p>
+				</div>
+				
+			</div>
+
+			<div class="boxsobreinf">
+				<h1>	O QUE É UM PATROCINADDOR?</h1>
+				<div class="areadetexto">
+				<p>Um patrocinador é um estabelecimento que vai pagar pelo seu wesite! Como? Pagando por uma esposiçao em uma área especifica do seu site. Isso é extremamente eficiente para para o patrocinador, pois os clietnes que frequentam o seu site sao de interesse dele. Afinal os sites que um patrocinador escolhe sao filtrados por localizaçao e proximidade   </p>
+				</div>
+			</div>
+
+
+		   </div>
+
+		   
+			<div class="containerflexa">
+				<div class="flexa"></div>
+			</div>
+
+		  
+
+				
+		<div class="contttt">
+
+		
+			<div class="container">
+				<div class="card">
+					<div class="face face1">
+						<div class="content">
+							<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+							<h3>SEU SITE</h3>
+						</div>
+					</div>
+					<div class="face face2">
+						<div class="content">
+							<p>Já pensou em ganhar um site que custa 2000R$ de graça? A Turboweb criou um sistema inovador para aquisiçao de sites!</p>
+								<a href="#">Clique para ver os templates!</a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="face face1">
+						<div class="content">
+							<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+							<h3>PATROCINADORES</h3>
+						</div>
+					</div>
+					<div class="face face2">
+						<div class="content">
+							<p>Já pensou em anunciar seu estabelecimento para clientes que frequentam a sua rua? Seja um patrocinador! </p>
+								<a href="#">Clique para ser um patrocinador!</a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="face face1">
+						<div class="content">
+							<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+							<h3>PREÇOS</h3>
+						</div>
+					</div>
+					<div class="face face2">
+						<div class="content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+								<a href="#">Clique para ver os nossos preços!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		   </div>
+			
+	   </div><!--containersobre-->
+
+
+	
+
+
+	   
+
+
+
+	   <div class="containertemplates">
+			<div style="padding-top: 50px;" class="titulo-container2">
+				<p style="font-size: 35px; font-weight: bold;">TEMPLATES</p>
+			</div>
+
+			<div id="carousel">
+
+				<div class="hideLeft">
+				 <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+				 <p class="buttons" id="1" onclick="pegarid(id)">Quero esse!</p>
+			   </div>
+		 
+			   <div class="prevLeftSecond">
+				 <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+				 <p class="buttons" id="2" onclick="pegarid(id)">Quero esse!</p>
+			   </div>
+		 
+			   <div class="prev">
+				 <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+				 <p class="buttons" id="3" onclick="pegarid(id)">Quero esse!</p>
+			   </div>
+		 
+			   <div class="selected">
+				 <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+				 <p class="buttons" id="4" onclick="pegarid(id)">Quero esse!</p>
+			   </div>
+		 
+			   <div class="next">
+				 <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+				 <p class="buttons" id="5" onclick="pegarid(id)">Quero esse!</p>
+			   </div>
+
+		 
+			  
+		 
+			
+		 
+			 </div>
+		 
+
+
+
+	   </div><!--templates-->
+
+
+
+
+
+		<div class="containerfeedback">
+			<div style="padding-top: 50px;" class="titulo-container2">
+				<p style="font-size: 35px; font-weight: bold;">FEEDBACKS</p>
+			</div>
+
+
+
+	   </div><!--feedabck-->
+
+
+	   <div class="containerVALORES">
+		<div style="padding-top: 50px;" class="titulo-container2">
+			<p style="font-size: 35px; font-weight: bold;">VALORES</p>
 		</div>
 
+			
+
+	</div><!--containerVALORES-->
 
 
 
-		</div>
+
+	   <div class="containercontato" id="contato">
+
+		<section>
+			<h1>ENTRE EM CONTATO</h1>
+			<div class="form">
+			  <form method="POST" action="">
+				<div class="input-field">
+				  <i class="fas fa-user"></i>
+				  <label for="nombre">Seu nome: </label>
+				  <input type="text" placeholder="Nome" name="nombre" maxlength="50" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ]{3,23}" title="Debe indicar su nombre correctamente" required>
+				</div>
+				<div class="input-field">
+				  <i class="fas fa-pen"></i>
+				  <label for="mensaje">Sua mensagem: </label>
+				  <textarea placeholder="Sua mensagem" name="mensaje" rows="10" length="140" required></textarea>
+				</div>
+  
+				<div class="btn-block">
+				  <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>ENVIAR</button>
+				</div>
+  
+			  </form>
+			</div>
+		  </section>
+
+	   </div> <!--contato-->
+
+
+
 
 	</content>
+
+
+	<!-- Inclua o jQuery a partir do CDN -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 <script type="text/javascript">
 
@@ -284,12 +501,16 @@
 
 		class Calc{
 		#vari
-        constructor(vari) {
-        this.vari = vari;}
-		get vari(){
-			return this.#vari;}
-		set vari(valor) {
-            this.#vari = valor; }}
+        	constructor(vari) {
+				this.vari = vari;
+			}
+			get vari(){
+				return this.#vari;
+			}
+			set vari(valor) {
+				this.#vari = valor; 
+			}
+		}
         const obj0 = new Calc(); //  obj0.vari = vari2;
 				const obj1 = new Calc();
 
@@ -639,6 +860,58 @@
 
 
 
+   function pegarid(id) {
+	var id =  document.getElementById(id)
+	console.log(id.id)
+
+	if(id == 1){
+		var bgL =  document.getElementById('bgL')
+		bgL.style.display = 'initial'
+	}	
+
+   }
+
+
+
+
+
+   var currentIndex = 0;
+
+function moveToSelected(element) {
+  if (element == "next") {
+    currentIndex = (currentIndex < $("#carousel div").length - 1) ? currentIndex + 1 : 0;
+  } else if (element == "prev") {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : $("#carousel div").length - 1;
+  } else {
+    currentIndex = $(element).index();
+  }
+
+  var selected = $("#carousel div").eq(currentIndex);
+  var next = (currentIndex < $("#carousel div").length - 1) ? selected.next() : $("#carousel div:first");
+  var prev = (currentIndex > 0) ? selected.prev() : $("#carousel div:last");
+  var prevSecond = (currentIndex > 1) ? prev.prev() : $("#carousel div:last").prev();
+  var nextSecond = (currentIndex < $("#carousel div").length - 2) ? next.next() : $("#carousel div:first").next();
+
+  //$("#carousel div").removeClass().addClass("hide");
+  selected.removeClass().addClass("selected");
+  prev.removeClass().addClass("prev");
+  next.removeClass().addClass("next");
+  nextSecond.removeClass().addClass("nextRightSecond");
+  prevSecond.removeClass().addClass("prevLeftSecond");
+}
+
+// Restante do seu código...
+
+// Mover automaticamente para o próximo elemento a cada segundo
+setInterval(function() {
+  moveToSelected('next');
+}, 4000);
+
+
+
+
+
+
 
 
 
@@ -660,6 +933,10 @@
     ct2p.style.animation = null; // Restaurar a animação
 
  }
+
+
+
+
 
 
     function startAnimation() {
